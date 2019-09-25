@@ -30,13 +30,14 @@ public class MainActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         scoreTemA = savedInstanceState.getInt("teamA");
         scoreTemB = savedInstanceState.getInt("teamB");
+        displayForTeamA(scoreTemA);
+        displayForTeamB(scoreTemB);
     }
 
     /*
      * Team A Code Started
      * */
     public void teamAOneScore(View view) {
-
         scoreTemA = scoreTemA + 1;
         displayForTeamA(scoreTemA);
     }
